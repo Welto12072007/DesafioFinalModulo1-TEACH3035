@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetShop - Gerenciamento</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <nav class="barra-navegacao">
+        <div class="conteiner-navegacao">
+            <div class="logo">
+                <h1>🐾 PetShop</h1>
+            </div>
+            <ul class="menu-navegacao">
+                <li><a href="index.html" class="ativo">Início</a></li>
+                <li><a href="clientes.html">Clientes</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="conteiner-principal">
+        <section class="secao-informacoes">
+            <div class="cabecalho-secao">
+                <h2>Informações do PetShop</h2>
+            </div>
+            
+            <div class="cartao-informacoes">
+                <div class="info-petshop">
+                    <h3>Sobre Nós</h3>
+                    <div class="detalhes-info">
+                        <p><strong>Nome:</strong> PetShop Amigo Fiel</p>
+                        <p><strong>Descrição:</strong> Seu pet merece o melhor! Oferecemos produtos de qualidade, atendimento especializado e muito carinho para seu amigo de quatro patas.</p>
+                        <p><strong>Endereço:</strong> Rua das Flores, 123 - Centro</p>
+                        <p><strong>Telefone:</strong> (11) 98765-4321</p>
+                        <p><strong>Email:</strong> contato@petshopamigofiel.com.br</p>
+                        <p><strong>Horário:</strong> Segunda à Sábado - 8h às 18h</p>
+                    </div>
+                </div>
+
+                <div class="formulario-atendimento">
+                    <h3>Cadastro de Atendimento</h3>
+                    <form id="formularioAtendimento">
+                        <div class="grupo-formulario">
+                            <label for="nomeTutor">Nome do Tutor:</label>
+                            <input type="text" id="nomeTutor" required>
+                        </div>
+                        
+                        <div class="grupo-formulario">
+                            <label for="telefoneTutor">Telefone:</label>
+                            <input type="tel" id="telefoneTutor" required>
+                        </div>
+                        
+                        <div class="grupo-formulario">
+                            <label for="enderecoTutor">Endereço:</label>
+                            <input type="text" id="enderecoTutor" required>
+                        </div>
+                        
+                        <div class="grupo-formulario">
+                            <label for="dataAtendimento">Data do Atendimento:</label>
+                            <input type="date" id="dataAtendimento" required>
+                        </div>
+
+                        <h4>Dados do Animal</h4>
+                        
+                        <div class="grupo-formulario">
+                            <label for="nomeAnimal">Nome do Animal:</label>
+                            <input type="text" id="nomeAnimal" required>
+                        </div>
+                        
+                        <div class="grupo-formulario">
+                            <label for="idadeAnimal">Idade:</label>
+                            <input type="number" id="idadeAnimal" required>
+                        </div>
+                        
+                        <div class="grupo-formulario">
+                            <label for="porteAnimal">Porte:</label>
+                            <select id="porteAnimal" required>
+                                <option value="">Selecione...</option>
+                                <option value="Pequeno">Pequeno</option>
+                                <option value="Médio">Médio</option>
+                                <option value="Grande">Grande</option>
+                            </select>
+                        </div>
+                        
+                        <button type="submit" class="botao-principal">Cadastrar Cliente</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>Desafio Final Módulo 1 - TEACH3035</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

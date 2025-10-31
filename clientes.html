@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes - PetShop</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <nav class="barra-navegacao">
+        <div class="conteiner-navegacao">
+            <div class="logo">
+                <h1>🐾 PetShop</h1>
+            </div>
+            <ul class="menu-navegacao">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="clientes.html" class="ativo">Clientes</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="conteiner-principal">
+        <section class="secao-clientes">
+            <div class="cabecalho-secao">
+                <h2>Clientes Cadastrados</h2>
+                <p>Visualize e gerencie os clientes do petshop</p>
+            </div>
+
+            <div id="listaClientes" class="grade-cartoes">
+            </div>
+
+            <div id="mensagemVazio" class="mensagem-vazio">
+                <p>Nenhum cliente cadastrado ainda.</p>
+                <a href="index.html" class="botao-secundario">Cadastrar Primeiro Cliente</a>
+            </div>
+        </section>
+    </main>
+
+    <div id="modalDetalhes" class="modal">
+        <div class="conteudo-modal">
+            <span class="fechar-modal">&times;</span>
+            <h2>Detalhes do Cliente</h2>
+            <div id="detalhesCliente" class="detalhes-cliente">
+            </div>
+            <button class="botao-principal" onclick="fecharModal()">Fechar</button>
+        </div>
+    </div>
+
+    <footer class="rodape">
+        <p>Desafio Final Módulo 1 - TEACH3035</p>
+    </footer>
+
+    <script src="clientes.js"></script>
+</body>
+</html>

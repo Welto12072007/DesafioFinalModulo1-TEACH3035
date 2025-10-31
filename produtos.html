@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - PetShop</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <nav class="barra-navegacao">
+        <div class="conteiner-navegacao">
+            <div class="logo">
+                <h1>🐾 PetShop</h1>
+            </div>
+            <ul class="menu-navegacao">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="clientes.html">Clientes</a></li>
+                <li><a href="produtos.html" class="ativo">Produtos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="conteiner-principal">
+        <section class="secao-produtos">
+            <div class="cabecalho-secao">
+                <h2>Produtos para seu Pet</h2>
+                <p>Rações premium para cães de todos os portes</p>
+            </div>
+
+            <div id="listaProdutos" class="grade-produtos">
+            </div>
+        </section>
+
+        <div id="carrinhoFlutuante" class="carrinho-flutuante">
+            <div class="icone-carrinho">
+                🛒
+                <span id="contadorCarrinho" class="contador-carrinho">0</span>
+            </div>
+        </div>
+    </main>
+
+    <div id="modalNotificacao" class="modal-notificacao">
+        <div class="conteudo-notificacao">
+            <span class="icone-sucesso">✓</span>
+            <p id="textoNotificacao"></p>
+        </div>
+    </div>
+
+    <footer class="rodape">
+        <p>Desafio Final Módulo 1 - TEACH3035</p>
+    </footer>
+
+    <script src="produtos.js"></script>
+</body>
+</html>
